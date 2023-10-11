@@ -5,7 +5,7 @@ import '../styles/navbar.css';
 function Navbar() {
   return (
     <div className='nav_container'>
-      <Link to="/" className='FlashIQ'>FlashIQ</Link>
+      <Link to="/" className='FlashIQ'>FlashKards</Link>
       <div className='nav_style'>
         <Link to="/" className='nav_button'>Home</Link>
         <Link to="/subjects" className='nav_button'>Subjects</Link>
