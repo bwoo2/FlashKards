@@ -1,0 +1,53 @@
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: white;
+}
+
+.FlashIQ {
+    padding-right: 4%;
+    font-size: 18pt;
+}
+
+.nav_style {
+    display: flex;
+    align-items: center; 
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.nav_button, .nav_button_sign_up, .nav_button_add, .FlashIQ {
+    background: transparent;
+    border: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+.nav_button_add {
+    border-radius: 100px;
+    background-color: blue;
+    color: white;
+    font-size: large;
+}
+
+.nav_button_sign_up {
+    background-color: gold;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.search_bar {
+    border-radius: 10px;
+    padding: 10px;
+    flex-grow: 1; 
+    min-width: 0; 
+}
