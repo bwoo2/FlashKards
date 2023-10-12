@@ -8,7 +8,7 @@ function Home() {
             image here
         </div>
         <div>
-            <h1>Study with us!</h1>
+            <h1>Acheieve amazing scores with FlashKard's tools and strategies</h1>
         </div>
     </div>
   )
