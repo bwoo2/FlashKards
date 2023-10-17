@@ -1,14 +1,33 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import '../styles/navbar.css';
 
 function Navbar() {
+
+  const navigate = useNavigate(); 
+  const handleSubjectsClick = () => {
+    navigate('/subjects'); 
+  };
+
   return (
     <div className='nav_container'>
       <Link to="/" className='FlashIQ'>FlashKards</Link>
       <div className='nav_style'>
         <Link to="/" className='nav_button'>Home</Link>
-        <Link to="/subjects" className='nav_button'>Subjects</Link>
+        <div className="dropdown_wrapper">
+          <button 
+            className='nav_button subjects_button' 
+            onClick={handleSubjectsClick}
+          >
+            Subjects
+          </button>
+          <div className="dropdown_list">
+            <Link to="/subjects/English" className='dropdown_item'>English</Link>
+            <Link to="/subjects/History" className='dropdown_item'>History</Link>
+            <Link to="/subjects/Math" className='dropdown_item'>Math</Link>
+            <Link to="/subjects/Science" className='dropdown_item'>Science</Link>
+          </div>
+        </div>
         <input 
             type="search" 
             placeholder="Search topics, usernames,..." 

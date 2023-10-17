@@ -24,6 +24,14 @@
     flex-grow: 1;
 }
 
+.nav_button {
+    font-size: 12pt;
+}
+
+.subjects_button {
+    padding: 11%;
+}
+
 .nav_button, .nav_button_sign_up, .nav_button_add, .FlashIQ {
     background: transparent;
     border: none;
@@ -51,4 +59,36 @@
     padding: 10px;
     flex-grow: 1; 
     min-width: 0; 
+}
+
+.dropdown_wrapper {
+    position: relative;
+    display: inline-block; 
+}
+
+.dropdown_list {
+    display: none; 
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    font-size: 12pt;
+    top: 110%; 
+    left: 0; 
+}
+
+.dropdown_wrapper:hover .dropdown_list {
+    display: block; 
+}
+
+.dropdown_item {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown_item:hover {
+    background-color: #f1f1f1;
 }

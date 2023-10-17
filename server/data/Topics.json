@@ -1,0 +1,32 @@
+{
+    "subjects": {
+        "English": {
+            "topics": [
+              "Literature",
+              "Creative Writing",
+              "Poetry"
+            ]
+        },
+        "History": {
+            "topics": [
+              "Ancient History",
+              "Modern History",
+              "American History"
+            ]
+        },
+        "Math": {
+            "topics": [
+              "Algebra",
+              "Calculus",
+              "Geometry"
+            ]
+        },
+        "Science": {
+            "topics": [
+              "Physics",
+              "Chemistry",
+              "Biology"
+            ]
+        }
+    }
+}
